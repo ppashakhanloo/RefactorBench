@@ -3,7 +3,7 @@
 {{ user }}:
   user.present:
     - usergroup: False
-    - password: '$6$saYbZFw2$rtmvt2LOYchvlM22y34mCs7FiIN4Fq27rmv/whr/M.oPrgfCDhP5uJqnfe6uwFj90FvwA45rhZplnRNMgiY.J.'
+    - password: 'xxxxxxxxxxxxx'
     - require:
       - group: {{ user }}
   group.present: []
