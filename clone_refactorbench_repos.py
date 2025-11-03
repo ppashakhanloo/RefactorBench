@@ -18,7 +18,7 @@ with open(dataset_file, 'r') as f:
   dataset = json.loads(f.read())
 
 if not os.path.exists('repositories'):
-  os.system('git clone https://github.com/microsoft/RefactorBench')
+  os.system('git clone https://github.com/ppashakhanloo/RefactorBench')
   os.system('cp -r RefactorBench/repositories . && rm -rf RefactorBench')
 
   print('>>> CLONED THE MOTHER REPOSITORY! <<<')
