@@ -5,7 +5,7 @@ import ast
 class TestSaltUtilsStateFail(unittest.TestCase):
 
     def test_ex_state_failure_not_in_exitcodes(self):
-        file_path = '../salt/defaults/exitcodes.py'
+        file_path = 'salt/defaults/exitcodes.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -22,7 +22,7 @@ class TestSaltUtilsStateFail(unittest.TestCase):
         self.assertFalse(ex_state_failure_found, f"'EX_STATE_FAILURE' should not exist in {file_path}")
 
     def test_ex_state_fail_in_exitcodes(self):
-        file_path = '../salt/defaults/exitcodes.py'
+        file_path = 'salt/defaults/exitcodes.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -39,7 +39,7 @@ class TestSaltUtilsStateFail(unittest.TestCase):
         self.assertTrue(ex_state_fail_found, f"'EX_STATE_FAIL' not found in {file_path}")
 
     def test_ex_state_failure_not_in_state(self):
-        file_path = '../salt/modules/state.py'
+        file_path = 'salt/modules/state.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -62,7 +62,7 @@ class TestSaltUtilsStateFail(unittest.TestCase):
         self.assertFalse(ex_state_failure_found, "salt.defaults.exitcodes.EX_STATE_FAILURE should not exist in salt/modules/state.py")
 
     def test_ex_state_fail_is_used_in_state(self):
-        file_path = '../salt/modules/state.py'
+        file_path = 'salt/modules/state.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -85,7 +85,7 @@ class TestSaltUtilsStateFail(unittest.TestCase):
         self.assertTrue(ex_state_fail_found, "salt.defaults.exitcodes.EX_STATE_FAIL was not found in salt/modules/state.py")
 
     def test_ex_state_failure_not_in_test_salt_call(self):
-        file_path = '../tests/pytests/integration/cli/test_salt_call.py'
+        file_path = 'tests/pytests/integration/cli/test_salt_call.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -108,7 +108,7 @@ class TestSaltUtilsStateFail(unittest.TestCase):
         self.assertFalse(ex_state_failure_found, "salt.defaults.exitcodes.EX_STATE_FAILURE should not exist in tests/pytests/integration/cli/test_salt_call.py")
 
     def test_ex_state_fail_is_used_in_test_salt_call(self):
-        file_path = '../tests/pytests/integration/cli/test_salt_call.py'
+        file_path = 'tests/pytests/integration/cli/test_salt_call.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:

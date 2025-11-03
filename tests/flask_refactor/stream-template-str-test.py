@@ -5,7 +5,7 @@ import ast
 class TestHelpersFunctions(unittest.TestCase):
 
     def test_stream_template_string_not_in_templating(self):
-        file_path = '../src/flask/templating.py'
+        file_path = 'src/flask/templating.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -20,7 +20,7 @@ class TestHelpersFunctions(unittest.TestCase):
         self.assertFalse(function_found, "'stream_template_string' function found in templating.py")
 
     def test_stream_template_str_exists_in_templating(self):
-        file_path = '../src/flask/templating.py'
+        file_path = 'src/flask/templating.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -35,7 +35,7 @@ class TestHelpersFunctions(unittest.TestCase):
         self.assertTrue(function_found, "'stream_template_str' function not found in templating.py")
 
     def test_import_in_init(self):
-        file_path = '../src/flask/__init__.py'
+        file_path = 'src/flask/__init__.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -52,7 +52,7 @@ class TestHelpersFunctions(unittest.TestCase):
         self.assertTrue(import_found, "Import 'from .templating import stream_template_str as stream_template_string' not found in __init__.py")
 
     def test_flask_stream_template_string_call(self):
-        file_path = '../tests/test_templating.py'
+        file_path = 'tests/test_templating.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:

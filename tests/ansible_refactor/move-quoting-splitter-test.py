@@ -6,7 +6,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_config_imports_unquote(self):
         # Path to the config.py file
-        file_path = '../lib/ansible/cli/config.py'
+        file_path = 'lib/ansible/cli/config.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -27,7 +27,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_dataloader_imports_unquote(self):
         # Path to the dataloader.py file
-        file_path = '../lib/ansible/parsing/dataloader.py'
+        file_path = 'lib/ansible/parsing/dataloader.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -48,7 +48,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_splitter_contains_unquote_and_is_quoted(self):
         # Path to the splitter.py file
-        file_path = '../lib/ansible/parsing/splitter.py'
+        file_path = 'lib/ansible/parsing/splitter.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -72,7 +72,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_schema_imports_unquote(self):
         # Path to the schema.py file
-        file_path = '../test/lib/ansible_test/_util/controller/sanity/validate-modules/validate_modules/schema.py'
+        file_path = 'test/lib/ansible_test/_util/controller/sanity/validate-modules/validate_modules/schema.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -93,7 +93,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_test_unquote_imports_unquote(self):
         # Path to the test_unquote.py file
-        file_path = '../test/units/parsing/test_unquote.py'
+        file_path = 'test/units/parsing/test_unquote.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -114,7 +114,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_quoting_file_deleted(self):
         # Path to the quoting.py file
-        file_path = '../lib/ansible/parsing/quoting.py'
+        file_path = 'lib/ansible/parsing/quoting.py'
 
         # Check if the file has been deleted
         self.assertFalse(os.path.exists(file_path), f"{file_path} should be deleted but still exists")

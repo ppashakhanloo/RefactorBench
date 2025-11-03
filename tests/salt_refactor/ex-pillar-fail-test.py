@@ -5,7 +5,7 @@ import ast
 class TestSaltUtilsSMB(unittest.TestCase):
 
     def test_ex_pillar_fail_in_exitcodes(self):
-        file_path = '../salt/defaults/exitcodes.py'
+        file_path = 'salt/defaults/exitcodes.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -26,7 +26,7 @@ class TestSaltUtilsSMB(unittest.TestCase):
         self.assertFalse(ex_pillar_failure_found, f"'EX_PILLAR_FAILURE' (misspelled) found in {file_path}")
 
     def test_ex_pillar_failure_isnt_used_in_state_wrapper(self):
-        file_path = '../salt/client/ssh/wrapper/state.py'
+        file_path = 'salt/client/ssh/wrapper/state.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -49,7 +49,7 @@ class TestSaltUtilsSMB(unittest.TestCase):
         self.assertFalse(ex_pillar_failure_found, "salt.defaults.exitcodes.EX_PILLAR_FAILURE was found in salt/client/ssh/wrapper/state.py, but it should not be used.")
 
     def test_ex_pillar_fail_is_used_in_state_wrapper(self):
-        file_path = '../salt/client/ssh/wrapper/state.py'
+        file_path = 'salt/client/ssh/wrapper/state.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -72,7 +72,7 @@ class TestSaltUtilsSMB(unittest.TestCase):
         self.assertTrue(ex_pillar_fail_found, "salt.defaults.exitcodes.EX_PILLAR_FAIL was not found in salt/client/ssh/wrapper/state.py")
 
     def test_ex_pillar_failure_isnt_used_in_state_module(self):
-        file_path = '../salt/modules/state.py'
+        file_path = 'salt/modules/state.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -95,7 +95,7 @@ class TestSaltUtilsSMB(unittest.TestCase):
         self.assertFalse(ex_pillar_failure_found, "salt.defaults.exitcodes.EX_PILLAR_FAILURE was found in salt/modules/state.py, but it should not be used.")
 
     def test_ex_pillar_fail_is_used_in_state_module(self):
-        file_path = '../salt/modules/state.py'
+        file_path = 'salt/modules/state.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:

@@ -5,7 +5,7 @@ import ast
 class TestBoto3ModImports(unittest.TestCase):
 
     def test_import_exactly_n_exists(self):
-        file_path = '../salt/utils/boto3mod.py'
+        file_path = 'salt/utils/boto3mod.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -21,7 +21,7 @@ class TestBoto3ModImports(unittest.TestCase):
         self.assertTrue(exactly_n_import_exists, f"Import for 'exactly_n' from 'salt.utils.botomod' or '.botomod' not found in {file_path}")
 
     def test_import_exactly_one_exists(self):
-        file_path = '../salt/utils/boto3mod.py'
+        file_path = 'salt/utils/boto3mod.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -43,7 +43,7 @@ import ast
 class TestBoto3ModDefinitions(unittest.TestCase):
 
     def test_exactly_n_definition_exists(self):
-        file_path = '../salt/utils/boto3mod.py'
+        file_path = 'salt/utils/boto3mod.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -65,7 +65,7 @@ class TestBoto3ModDefinitions(unittest.TestCase):
         self.assertEqual([arg.id for arg in return_statement.value.args], ['l', 'n'], "'exactly_n' function does not pass the correct arguments to 'imported_exactly_n'")
 
     def test_exactly_one_definition_exists(self):
-        file_path = '../salt/utils/boto3mod.py'
+        file_path = 'salt/utils/boto3mod.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:

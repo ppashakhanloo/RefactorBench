@@ -6,7 +6,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_ensure_serialize_function_exists(self):
         # Path to the file where the ensure_serialize function should be defined
-        file_path = '../celery/utils/serialization.py'
+        file_path = 'celery/utils/serialization.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -26,7 +26,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_ensure_serialization_function_does_not_exist(self):
         # Path to the file where the ensure_serialization function should not be defined
-        file_path = '../celery/utils/serialization.py'
+        file_path = 'celery/utils/serialization.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -46,7 +46,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_ensure_serialize_usage_count(self):
         # Path to the file where the ensure_serialize function usage should be checked
-        file_path = '../celery/utils/serialization.py'
+        file_path = 'celery/utils/serialization.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -65,7 +65,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_required_imports_in_base(self):
         # Path to the file where the imports should be checked
-        file_path = '../celery/backends/base.py'
+        file_path = 'celery/backends/base.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -93,7 +93,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_class_test_ensure_serialize_exists(self):
         # Path to the file where the test_ensure_serialize class should be defined
-        file_path = '../t/unit/utils/test_serialization.py'
+        file_path = 't/unit/utils/test_serialization.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -112,7 +112,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_methods_exist_in_test_ensure_serialize(self):
         # Path to the file where the methods should be defined in the test_ensure_serialize class
-        file_path = '../t/unit/utils/test_serialization.py'
+        file_path = 't/unit/utils/test_serialization.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -135,7 +135,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_ensure_serialize_used_in_methods(self):
         # Path to the file where the ensure_serialize function usage should be checked in the test methods
-        file_path = '../t/unit/utils/test_serialization.py'
+        file_path = 't/unit/utils/test_serialization.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -159,7 +159,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_required_imports_in_test_serialization(self):
         # Path to the file where the imports should be checked
-        file_path = '../t/unit/utils/test_serialization.py'
+        file_path = 't/unit/utils/test_serialization.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -188,7 +188,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_serialization_ensure_serialize_used_in_test_base(self):
         # Path to the file where serialization.ensure_serialize usage should be checked
-        file_path = '../t/unit/backends/test_base.py'
+        file_path = 't/unit/backends/test_base.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")

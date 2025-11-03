@@ -5,7 +5,7 @@ import ast
 class TestSaltExitCodes(unittest.TestCase):
 
     def test_exitcodes_has_ex_unavail(self):
-        file_path = '../salt/defaults/exitcodes.py'
+        file_path = 'salt/defaults/exitcodes.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -23,7 +23,7 @@ class TestSaltExitCodes(unittest.TestCase):
         self.assertTrue(ex_unavail_found, f"'EX_UNAVAIL = 69' not found in {file_path}")
 
     def test_scripts_py_uses_ex_unavail(self):
-        file_path = '../salt/scripts.py'
+        file_path = 'salt/scripts.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -46,7 +46,7 @@ class TestSaltExitCodes(unittest.TestCase):
         self.assertTrue(ex_unavail_used, f"'salt.defaults.exitcodes.EX_UNAVAIL' not found in {file_path}")
     
     def test_scripts_py_does_not_use_ex_unavailable(self):
-        file_path = '../salt/scripts.py'
+        file_path = 'salt/scripts.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -69,7 +69,7 @@ class TestSaltExitCodes(unittest.TestCase):
         self.assertFalse(ex_unavailable_used, f"'salt.defaults.exitcodes.EX_UNAVAILABLE' found in {file_path}")
 
     def test_parsers_py_uses_ex_unavail(self):
-        file_path = '../salt/utils/parsers.py'
+        file_path = 'salt/utils/parsers.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -92,7 +92,7 @@ class TestSaltExitCodes(unittest.TestCase):
         self.assertTrue(ex_unavail_used, f"'salt.defaults.exitcodes.EX_UNAVAIL' not found in {file_path}")
     
     def test_parsers_py_does_not_use_ex_unavailable(self):
-        file_path = '../salt/utils/parsers.py'
+        file_path = 'salt/utils/parsers.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -115,7 +115,7 @@ class TestSaltExitCodes(unittest.TestCase):
         self.assertFalse(ex_unavailable_used, f"'salt.defaults.exitcodes.EX_UNAVAILABLE' found in {file_path}")
 
     def test_salt_call_py_uses_ex_unavail(self):
-        file_path = '../tests/pytests/integration/cli/test_salt_call.py'
+        file_path = 'tests/pytests/integration/cli/test_salt_call.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -138,7 +138,7 @@ class TestSaltExitCodes(unittest.TestCase):
         self.assertTrue(ex_unavail_used, f"'salt.defaults.exitcodes.EX_UNAVAIL' not found in {file_path}")
     
     def test_salt_call_py_does_not_use_ex_unavailable(self):
-        file_path = '../tests/pytests/integration/cli/test_salt_call.py'
+        file_path = 'tests/pytests/integration/cli/test_salt_call.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -161,7 +161,7 @@ class TestSaltExitCodes(unittest.TestCase):
         self.assertFalse(ex_unavailable_used, f"'salt.defaults.exitcodes.EX_UNAVAILABLE' found in {file_path}")
 
     def test_scripts_py_imports_exitcodes(self):
-        file_path = '../salt/scripts.py'
+        file_path = 'salt/scripts.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -179,7 +179,7 @@ class TestSaltExitCodes(unittest.TestCase):
         self.assertTrue(import_found, f"'import salt.defaults.exitcodes' not found in {file_path}")
 
     def test_parsers_py_imports_exitcodes(self):
-        file_path = '../salt/utils/parsers.py'
+        file_path = 'salt/utils/parsers.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -197,7 +197,7 @@ class TestSaltExitCodes(unittest.TestCase):
         self.assertTrue(import_found, f"'import salt.defaults.exitcodes' not found in {file_path}")
 
     def test_salt_call_py_imports_exitcodes(self):
-        file_path = '../tests/pytests/integration/cli/test_salt_call.py'
+        file_path = 'tests/pytests/integration/cli/test_salt_call.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:

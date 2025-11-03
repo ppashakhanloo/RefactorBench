@@ -6,14 +6,14 @@ class TestCelerySerializationUtils(unittest.TestCase):
 
     def test_serialization_utils_file_exists(self):
         # Path to the file where the evaluate_promises function should be defined
-        file_path = '../celery/utils/serialization.py'
+        file_path = 'celery/utils/serialization.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
     def test_evaluate_promises_function_exists(self):
         # Path to the file where the evaluate_promises function should be defined
-        file_path = '../celery/utils/serialization.py'
+        file_path = 'celery/utils/serialization.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -34,7 +34,7 @@ class TestCelerySerializationUtils(unittest.TestCase):
 
     def test_import_evaluate_promises(self):
         # Path to the file where the import should be checked
-        file_path = '../celery/utils/functional.py'
+        file_path = 'celery/utils/functional.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -57,7 +57,7 @@ class TestCelerySerializationUtils(unittest.TestCase):
 
     def test_import_promise_from_vine(self):
         # Path to the file where the import should be checked
-        file_path = '../celery/utils/serialization.py'
+        file_path = 'celery/utils/serialization.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")

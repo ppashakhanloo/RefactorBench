@@ -5,7 +5,7 @@ import ast
 class TestHelpersFunctions(unittest.TestCase):
 
     def test_send_from_directory_helper_import_in_blueprints(self):
-        file_path = '../src/flask/blueprints.py'
+        file_path = 'src/flask/blueprints.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -21,7 +21,7 @@ class TestHelpersFunctions(unittest.TestCase):
         self.assertTrue(import_found, "Import 'send_from_directory_helper' not found in blueprints.py")
 
     def test_send_from_directory_helper_import_in_init(self):
-        file_path = '../src/flask/__init__.py'
+        file_path = 'src/flask/__init__.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -43,7 +43,7 @@ class TestHelpersFunctions(unittest.TestCase):
         self.assertTrue(alias_correct, "Alias 'send_from_directory' not correctly assigned in __init__.py")
 
     def test_send_from_directory_helper_import_in_app(self):
-        file_path = '../src/flask/app.py'
+        file_path = 'src/flask/app.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -60,7 +60,7 @@ class TestHelpersFunctions(unittest.TestCase):
 
     def test_send_from_directory_call_in_test_helpers(self):
         # Path to the test_helpers.py file
-        file_path = '../tests/test_helpers.py'
+        file_path = 'tests/test_helpers.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         # Check if rv = flask.send_from_directory("static", "hello.txt") is called in a function within a class

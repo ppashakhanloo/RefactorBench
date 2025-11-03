@@ -7,21 +7,21 @@ class TestCeleryRetryDocumentation(unittest.TestCase):
 
     def test_autoretry_file_does_not_exist(self):
         # Path to the file that should not exist
-        file_path = '../celery/app/autoretry.py'
+        file_path = 'celery/app/autoretry.py'
 
         # Check if the file does not exist
         self.assertFalse(os.path.exists(file_path), f"{file_path} should not exist")
 
     def test_retry_file_exists(self):
         # Path to the file that should exist
-        file_path = '../celery/app/retry.py'
+        file_path = 'celery/app/retry.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
     def test_docs_reference_does_not_contain_autoretry(self):
         # Path to the documentation file that should be checked
-        docs_path = '../docs/reference/index.rst'
+        docs_path = 'docs/reference/index.rst'
 
         # Check if the documentation file exists
         self.assertTrue(os.path.exists(docs_path), f"{docs_path} does not exist")
@@ -38,7 +38,7 @@ class TestCeleryRetryDocumentation(unittest.TestCase):
 
     def test_base_imports_add_autoretry_behaviour(self):
         # Path to the file that should be checked
-        file_path = '../celery/app/base.py'
+        file_path = 'celery/app/base.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -61,21 +61,21 @@ class TestCeleryRetryDocumentation(unittest.TestCase):
 
     def test_autoretry_rst_deleted(self):
         # Path to the documentation file that should be deleted
-        rst_path = '../docs/reference/celery.app.autoretry.rst'
+        rst_path = 'docs/reference/celery.app.autoretry.rst'
 
         # Check if the file does not exist
         self.assertFalse(os.path.exists(rst_path), f"{rst_path} should be deleted")
 
     def test_retry_rst_added(self):
         # Path to the new documentation file that should be added
-        rst_path = '../docs/reference/celery.app.retry.rst'
+        rst_path = 'docs/reference/celery.app.retry.rst'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(rst_path), f"{rst_path} should exist")
         
     def test_bandit_json_contains_retry_and_not_autoretry(self):
         # Path to the bandit.json file that should be checked
-        bandit_path = '../bandit.json'
+        bandit_path = 'bandit.json'
 
         # Check if the bandit.json file exists
         self.assertTrue(os.path.exists(bandit_path), f"{bandit_path} does not exist")

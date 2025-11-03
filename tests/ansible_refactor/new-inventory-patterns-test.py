@@ -6,7 +6,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_import_exists_in_manager(self):
         # Path to the file where the import should be checked
-        file_path = '../lib/ansible/inventory/manager.py'
+        file_path = 'lib/ansible/inventory/manager.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -28,7 +28,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_functions_exist_in_patterns(self):
         # Path to the file where the functions should be defined
-        file_path = '../lib/ansible/inventory/patterns.py'
+        file_path = 'lib/ansible/inventory/patterns.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -52,7 +52,7 @@ class TestAnsibleImports(unittest.TestCase):
         
     def test_import_re_exists(self):
         # Path to the file where the import should be checked
-        file_path = '../lib/ansible/inventory/patterns.py'
+        file_path = 'lib/ansible/inventory/patterns.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -73,7 +73,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_import_itertools_exists(self):
         # Path to the file where the import should be checked
-        file_path = '../lib/ansible/inventory/patterns.py'
+        file_path = 'lib/ansible/inventory/patterns.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -94,7 +94,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_import_string_types_exists(self):
         # Path to the file where the import should be checked
-        file_path = '../lib/ansible/inventory/patterns.py'
+        file_path = 'lib/ansible/inventory/patterns.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -116,7 +116,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_import_parse_address_exists(self):
         # Path to the file where the import should be checked
-        file_path = '../lib/ansible/inventory/patterns.py'
+        file_path = 'lib/ansible/inventory/patterns.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -138,7 +138,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_import_to_text_exists(self):
         # Path to the file where the import should be checked
-        file_path = '../lib/ansible/inventory/patterns.py'
+        file_path = 'lib/ansible/inventory/patterns.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -160,7 +160,7 @@ class TestAnsibleImports(unittest.TestCase):
     
     def test_import_inventory_manager_exists(self):
         # Path to the file where the import should be checked
-        file_path = '../test/units/plugins/inventory/test_inventory.py'
+        file_path = 'test/units/plugins/inventory/test_inventory.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -182,7 +182,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_import_split_host_pattern_exists(self):
         # Path to the file where the import should be checked
-        file_path = '../test/units/plugins/inventory/test_inventory.py'
+        file_path = 'test/units/plugins/inventory/test_inventory.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")

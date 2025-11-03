@@ -6,7 +6,7 @@ class TestCeleryRegistry(unittest.TestCase):
     
     def test_unpickle_task_exists(self):
         # Path to the file where the _unpickle_task function should be defined
-        file_path = '../celery/app/registry.py'
+        file_path = 'celery/app/registry.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -26,7 +26,7 @@ class TestCeleryRegistry(unittest.TestCase):
 
     def test_unpickle_task_v2_not_exists(self):
         # Path to the file where the _unpickle_task_v2 function should be defined
-        file_path = '../celery/app/registry.py'
+        file_path = 'celery/app/registry.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -46,7 +46,7 @@ class TestCeleryRegistry(unittest.TestCase):
 
     def test_import_unpickle_task_in_task_py(self):
         # Path to the task.py file
-        file_path = '../celery/app/task.py'
+        file_path = 'celery/app/task.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -69,7 +69,7 @@ class TestCeleryRegistry(unittest.TestCase):
 
     def test_import_unpickle_task_in_test_registry(self):
         # Path to the test_registry.py file
-        file_path = '../t/unit/app/test_registry.py'
+        file_path = 't/unit/app/test_registry.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -92,7 +92,7 @@ class TestCeleryRegistry(unittest.TestCase):
 
     def test_class_test_unpickle_test_exists(self):
         # Path to the test_registry.py file
-        file_path = '../t/unit/app/test_registry.py'
+        file_path = 't/unit/app/test_registry.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -112,7 +112,7 @@ class TestCeleryRegistry(unittest.TestCase):
 
     def test_function_test_unpickle_exists_in_test_unpickle_test(self):
         # Path to the test_registry.py file
-        file_path = '../t/unit/app/test_registry.py'
+        file_path = 't/unit/app/test_registry.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")

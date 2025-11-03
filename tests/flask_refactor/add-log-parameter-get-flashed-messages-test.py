@@ -5,7 +5,7 @@ import ast
 class TestHelpersFunctions(unittest.TestCase):
 
     def test_get_flashed_messages_param_in_helpers(self):
-        file_path = '../src/flask/helpers.py'
+        file_path = 'src/flask/helpers.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -26,7 +26,7 @@ class TestHelpersFunctions(unittest.TestCase):
         self.assertTrue(log_param_found, "Parameter 'log: bool' not found in function 'get_flashed_messages'")
 
     def test_get_flashed_messages_param_default_value(self):
-        file_path = '../src/flask/helpers.py'
+        file_path = 'src/flask/helpers.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -48,7 +48,7 @@ class TestHelpersFunctions(unittest.TestCase):
 
     
     def test_get_flashed_messages_calls_in_test_basic(self):
-        file_path = '../tests/test_basic.py'
+        file_path = 'tests/test_basic.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:

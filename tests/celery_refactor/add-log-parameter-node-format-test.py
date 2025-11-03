@@ -6,7 +6,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_node_format_has_log_parameter(self):
         # Path to the file where the node_format function should be defined
-        file_path = '../celery/utils/nodenames.py'
+        file_path = 'celery/utils/nodenames.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -39,7 +39,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_node_format_calls_in_worker_have_log_true(self):
         # Path to the file where the node_format calls should be checked
-        file_path = '../celery/bin/worker.py'
+        file_path = 'celery/bin/worker.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -66,7 +66,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_node_format_calls_in_log_have_log_true(self):
         # Path to the file where the node_format calls should be checked
-        file_path = '../celery/app/log.py'
+        file_path = 'celery/app/log.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")

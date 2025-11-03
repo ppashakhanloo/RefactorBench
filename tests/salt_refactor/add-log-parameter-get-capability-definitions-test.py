@@ -5,7 +5,7 @@ import ast
 class TestSaltUtilsPBM(unittest.TestCase):
 
     def test_get_capability_definitions_has_log_parameter(self):
-        file_path = '../salt/utils/pbm.py'
+        file_path = 'salt/utils/pbm.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -34,7 +34,7 @@ class TestSaltUtilsPBM(unittest.TestCase):
         self.assertTrue(log_param_default_is_false, f"'log' parameter in 'get_capability_definitions' function does not default to False in {file_path}")
 
     def test_get_capability_definitions_usage_has_log_true(self):
-        file_path = '../salt/modules/vsphere.py'
+        file_path = 'salt/modules/vsphere.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -73,7 +73,7 @@ class TestSaltUtilsPBM(unittest.TestCase):
                 f"Call to 'salt.utils.pbm.get_capability_definitions()' without 'log=True' found in {file_path}: {ast.dump(call)}"
             )
     def test_get_capability_definitions_usage_has_log_false_or_no_log(self):
-        file_path = '../tests/unit/utils/test_pbm.py'
+        file_path = 'tests/unit/utils/test_pbm.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:

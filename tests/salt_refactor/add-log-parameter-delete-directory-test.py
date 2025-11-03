@@ -5,7 +5,7 @@ import ast
 class TestSaltUtilsSMB(unittest.TestCase):
 
     def test_delete_directory_has_log_parameter(self):
-        file_path = '../salt/utils/smb.py'
+        file_path = 'salt/utils/smb.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -34,7 +34,7 @@ class TestSaltUtilsSMB(unittest.TestCase):
         self.assertTrue(log_param_default_is_false, f"'log' parameter in 'delete_directory' function does not default to False in {file_path}")
 
     def test_delete_directory_usage_has_log_true(self):
-        file_path = '../salt/utils/cloud.py'
+        file_path = 'salt/utils/cloud.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -74,7 +74,7 @@ class TestSaltUtilsSMB(unittest.TestCase):
             )
        
     def test_delete_directory_calls_integration_tests(self):
-        file_path = '../tests/integration/utils/test_smb.py'
+        file_path = 'tests/integration/utils/test_smb.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -116,7 +116,7 @@ class TestSaltUtilsSMB(unittest.TestCase):
                 self.assertFalse(log_argument.value, f"Call to 'salt.utils.smb.delete_directory()' has 'log=True' in {file_path}: {ast.dump(call)}")
     
     def test_smb_py_has_delete_directory(self):
-        file_path = '../salt/utils/smb.py'
+        file_path = 'salt/utils/smb.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:

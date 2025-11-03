@@ -6,7 +6,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_import_in_ansible_collector(self):
         # Path to the file where ansible_collector.py should be checked
-        file_path = '../lib/ansible/module_utils/facts/ansible_collector.py'
+        file_path = 'lib/ansible/module_utils/facts/ansible_collector.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -22,7 +22,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_import_in_compat(self):
         # Path to the file where compat.py should be checked
-        file_path = '../lib/ansible/module_utils/facts/compat.py'
+        file_path = 'lib/ansible/module_utils/facts/compat.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -43,7 +43,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_import_in_facter(self):
         # Path to the file where facter.py should be checked
-        file_path = '../lib/ansible/module_utils/facts/other/facter.py'
+        file_path = 'lib/ansible/module_utils/facts/other/facter.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -64,7 +64,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_import_in_ohai(self):
         # Path to the file where ohai.py should be checked
-        file_path = '../lib/ansible/module_utils/facts/other/ohai.py'
+        file_path = 'lib/ansible/module_utils/facts/other/ohai.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -85,7 +85,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_import_in_setup(self):
         # Path to the file where setup.py should be checked
-        file_path = '../lib/ansible/modules/setup.py'
+        file_path = 'lib/ansible/modules/setup.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -106,7 +106,7 @@ class TestAnsibleImports(unittest.TestCase):
         
     def test_import_in_test_ansible_collector(self):
         # Path to the file where test_ansible_collector.py should be checked
-        file_path = '../test/units/module_utils/facts/test_ansible_collector.py'
+        file_path = 'test/units/module_utils/facts/test_ansible_collector.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -126,7 +126,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_ns_in_test_ansible_collector(self):
         # Path to the file where test_ansible_collector.py should be checked
-        file_path = '../test/units/module_utils/facts/test_ansible_collector.py'
+        file_path = 'test/units/module_utils/facts/test_ansible_collector.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")

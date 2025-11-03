@@ -6,7 +6,7 @@ class TestAnsibleConnectionUtils(unittest.TestCase):
 
     def test_connection_utils_exists(self):
         # Path to the connection.py file
-        file_path = '../lib/ansible/module_utils/connection.py'
+        file_path = 'lib/ansible/module_utils/connection.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -31,7 +31,7 @@ class TestAnsibleConnectionUtils(unittest.TestCase):
 
     def test_imports_connection_utils_in_task_executor(self):
         # Path to the task_executor.py file
-        file_path = '../lib/ansible/executor/task_executor.py'
+        file_path = 'lib/ansible/executor/task_executor.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -53,7 +53,7 @@ class TestAnsibleConnectionUtils(unittest.TestCase):
 
     def test_imports_connection_utils_in_ansible_connection_cli_stub(self):
         # Path to the ansible_connection_cli_stub.py file
-        file_path = '../lib/ansible/cli/scripts/ansible_connection_cli_stub.py'
+        file_path = 'lib/ansible/cli/scripts/ansible_connection_cli_stub.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -75,7 +75,7 @@ class TestAnsibleConnectionUtils(unittest.TestCase):
         
     def test_connection_uses_connection_utils(self):
         # Path to the connection.py file
-        file_path = '../lib/ansible/module_utils/connection.py'
+        file_path = 'lib/ansible/module_utils/connection.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -114,7 +114,7 @@ class TestAnsibleConnectionUtils(unittest.TestCase):
 
     def test_start_connection_uses_write_to_stream(self):
         # Path to the task_executor.py file
-        file_path = '../lib/ansible/executor/task_executor.py'
+        file_path = 'lib/ansible/executor/task_executor.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -142,7 +142,7 @@ class TestAnsibleConnectionUtils(unittest.TestCase):
 
     def test_ansible_connection_cli_stub_imports(self):
         # Path to the ansible_connection_cli_stub.py file
-        file_path = '../lib/ansible/cli/scripts/ansible_connection_cli_stub.py'
+        file_path = 'lib/ansible/cli/scripts/ansible_connection_cli_stub.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -164,7 +164,7 @@ class TestAnsibleConnectionUtils(unittest.TestCase):
         
     def test_run_function_uses_recv_send_data(self):
         # Path to the ansible_connection_cli_stub.py file
-        file_path = '../lib/ansible/cli/scripts/ansible_connection_cli_stub.py'
+        file_path = 'lib/ansible/cli/scripts/ansible_connection_cli_stub.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")

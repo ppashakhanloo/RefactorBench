@@ -6,7 +6,7 @@ class TestCeleryDumpMessage(unittest.TestCase):
 
     def test_amqp_does_not_contain_dump_message(self):
         # Path to the file where dump_message should not be defined
-        file_path = '../celery/bin/amqp.py'
+        file_path = 'celery/bin/amqp.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -26,7 +26,7 @@ class TestCeleryDumpMessage(unittest.TestCase):
 
     def test_serialization_contains_dump_message(self):
         # Path to the file where dump_message should be defined
-        file_path = '../celery/utils/serialization.py'
+        file_path = 'celery/utils/serialization.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -46,7 +46,7 @@ class TestCeleryDumpMessage(unittest.TestCase):
 
     def test_amqp_imports_dump_message(self):
         # Path to the file where the import should be checked
-        file_path = '../celery/bin/amqp.py'
+        file_path = 'celery/bin/amqp.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")

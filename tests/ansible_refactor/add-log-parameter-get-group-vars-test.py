@@ -6,7 +6,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_get_group_vars_has_log_parameter(self):
         # Path to the file where the get_group_vars function should be defined
-        file_path = '../lib/ansible/inventory/helpers.py'
+        file_path = 'lib/ansible/inventory/helpers.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -30,7 +30,7 @@ class TestAnsibleImports(unittest.TestCase):
         
     def test_log_false_in_variable_manager_get_vars(self):
         # Path to the file where VariableManager and get_vars should be defined
-        file_path = '../lib/ansible/vars/manager.py'
+        file_path = 'lib/ansible/vars/manager.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -63,7 +63,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_vars_plugin_structure(self):
         # Path to the file to be checked
-        file_path = '../test/integration/targets/old_style_vars_plugins/deprecation_warning/v2_vars_plugin.py'
+        file_path = 'test/integration/targets/old_style_vars_plugins/deprecation_warning/v2_vars_plugin.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -104,7 +104,7 @@ class TestAnsibleImports(unittest.TestCase):
             
     def test_plugin_get_group_vars_no_log_in_plugins(self):
         # Path to the file to be checked
-        file_path = '../lib/ansible/vars/plugins.py'
+        file_path = 'lib/ansible/vars/plugins.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -122,7 +122,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_plugin_get_group_vars_no_log_in_manager(self):
         # Path to the file to be checked
-        file_path = '../lib/ansible/vars/manager.py'
+        file_path = 'lib/ansible/vars/manager.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")

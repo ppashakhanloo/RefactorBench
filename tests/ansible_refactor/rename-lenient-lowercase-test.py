@@ -6,7 +6,7 @@ class TestAnsibleFunctionRename(unittest.TestCase):
 
     def test_lenient_lowercase_renamed_to_lowercase_of_list(self):
         # Path to the file where lenient_lowercase should be renamed to lowercase_of_list
-        file_path = '../lib/ansible/module_utils/common/text/formatters.py'
+        file_path = 'lib/ansible/module_utils/common/text/formatters.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -30,7 +30,7 @@ class TestAnsibleFunctionRename(unittest.TestCase):
 
     def test_lowercase_of_list_imported_in_basic(self):
         # Path to the file where lowercase_of_list should be imported
-        file_path = '../lib/ansible/module_utils/basic.py'
+        file_path = 'lib/ansible/module_utils/basic.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -52,8 +52,8 @@ class TestAnsibleFunctionRename(unittest.TestCase):
         
     def test_test_file_renamed(self):
         # Paths to the old and new test files
-        old_test_file = '../test/units/module_utils/common/text/formatters/test_lenient_lowercase.py'
-        new_test_file = '../test/units/module_utils/common/text/formatters/test_lowercase_of_list.py'
+        old_test_file = 'test/units/module_utils/common/text/formatters/test_lenient_lowercase.py'
+        new_test_file = 'test/units/module_utils/common/text/formatters/test_lowercase_of_list.py'
 
         # Check that the old test file does not exist
         self.assertFalse(os.path.exists(old_test_file), f"{old_test_file} should not exist")
@@ -63,7 +63,7 @@ class TestAnsibleFunctionRename(unittest.TestCase):
         
     def test_test_file_content_updated(self):
         # Path to the new test file
-        test_file = '../test/units/module_utils/common/text/formatters/test_lowercase_of_list.py'
+        test_file = 'test/units/module_utils/common/text/formatters/test_lowercase_of_list.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(test_file), f"{test_file} does not exist")

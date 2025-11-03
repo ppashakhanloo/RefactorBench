@@ -5,7 +5,7 @@ class TestAnsibleInventory(unittest.TestCase):
 
     def test_inventory_data_exists(self):
         # Path to the directory where inventory_data.py should be located
-        directory_path = '../lib/ansible/inventory/'
+        directory_path = 'lib/ansible/inventory/'
 
         # Path to the specific files to be checked
         inventory_data_file = os.path.join(directory_path, 'inventory_data.py')
@@ -16,7 +16,7 @@ class TestAnsibleInventory(unittest.TestCase):
 
     def test_data_py_does_not_exist(self):
         # Path to the directory where data.py should be checked
-        directory_path = '../lib/ansible/inventory/'
+        directory_path = 'lib/ansible/inventory/'
 
         # Path to the specific file to be checked
         data_file = os.path.join(directory_path, 'data.py')
@@ -26,7 +26,7 @@ class TestAnsibleInventory(unittest.TestCase):
 
     def test_manager_py_imports_inventory_data(self):
         # Path to the manager.py file
-        manager_file_path = '../lib/ansible/inventory/manager.py'
+        manager_file_path = 'lib/ansible/inventory/manager.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(manager_file_path), f"{manager_file_path} does not exist")
@@ -42,7 +42,7 @@ class TestAnsibleInventory(unittest.TestCase):
 
     def test_inventory_data_has_inventorydata_class(self):
         # Path to the inventory_data.py file
-        inventory_data_file_path = '../lib/ansible/inventory/inventory_data.py'
+        inventory_data_file_path = 'lib/ansible/inventory/inventory_data.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(inventory_data_file_path), f"{inventory_data_file_path} does not exist")
@@ -62,7 +62,7 @@ class TestAnsibleInventory(unittest.TestCase):
 
     def test_constructed_py_imports_inventory_data(self):
         # Path to the test_constructed.py file
-        constructed_file_path = '../test/units/plugins/inventory/test_constructed.py'
+        constructed_file_path = 'test/units/plugins/inventory/test_constructed.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(constructed_file_path), f"{constructed_file_path} does not exist")

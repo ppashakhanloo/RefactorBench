@@ -5,7 +5,7 @@ import ast
 class TestSaltExitCodes(unittest.TestCase):
 
     def test_ex_cantcreate_in_exitcodes(self):
-        file_path = '../salt/defaults/exitcodes.py'
+        file_path = 'salt/defaults/exitcodes.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -22,7 +22,7 @@ class TestSaltExitCodes(unittest.TestCase):
         self.assertTrue(ex_cantcreate_found, f"'EX_CANTCREATE' not found in {file_path}")
 
     def test_ex_cantcreate_in_ssh_py_shim(self):
-        file_path = '../salt/client/ssh/ssh_py_shim.py'
+        file_path = 'salt/client/ssh/ssh_py_shim.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -39,7 +39,7 @@ class TestSaltExitCodes(unittest.TestCase):
         self.assertTrue(ex_cantcreate_found, f"'EX_CANTCREATE' not found in {file_path}")
 
     def test_ssh_py_shim_uses_local_ex_cantcreate(self):
-        file_path = '../salt/client/ssh/ssh_py_shim.py'
+        file_path = 'salt/client/ssh/ssh_py_shim.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -55,7 +55,7 @@ class TestSaltExitCodes(unittest.TestCase):
         self.assertTrue(ex_cantcreate_used, f"'EX_CANTCREATE' not used in {file_path}")
 
     def test_ssh_py_shim_does_not_import_exitcodes(self):
-        file_path = '../salt/client/ssh/ssh_py_shim.py'
+        file_path = 'salt/client/ssh/ssh_py_shim.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -73,7 +73,7 @@ class TestSaltExitCodes(unittest.TestCase):
         self.assertFalse(import_exitcodes_found, f"'import salt.defaults.exitcodes' should not be found in {file_path}")
 
     def test_exitcodes_does_not_have_ex_cantcreat(self):
-        file_path = '../salt/defaults/exitcodes.py'
+        file_path = 'salt/defaults/exitcodes.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -90,7 +90,7 @@ class TestSaltExitCodes(unittest.TestCase):
         self.assertFalse(ex_cantcreat_found, f"'EX_CANTCREAT' (misspelled) found in {file_path}")
 
     def test_ssh_py_shim_does_not_have_ex_cantcreat(self):
-        file_path = '../salt/client/ssh/ssh_py_shim.py'
+        file_path = 'salt/client/ssh/ssh_py_shim.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -107,7 +107,7 @@ class TestSaltExitCodes(unittest.TestCase):
         self.assertFalse(ex_cantcreat_found, f"'EX_CANTCREAT' (misspelled) found in {file_path}")
         
     def test_ex_cantcreate_is_used(self):
-        file_path = '../salt/client/ssh/__init__.py'
+        file_path = 'salt/client/ssh/__init__.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, "r") as file:
@@ -131,7 +131,7 @@ class TestSaltExitCodes(unittest.TestCase):
         self.assertTrue(ex_cantcreate_found, "salt.defaults.exitcodes.EX_CANTCREATE was not found in salt/client/ssh/__init__.py")
 
     def test_ex_cantcreat_isnt_used(self):
-        file_path = '../salt/client/ssh/__init__.py'
+        file_path = 'salt/client/ssh/__init__.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, "r") as file:

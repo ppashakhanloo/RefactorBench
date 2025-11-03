@@ -5,7 +5,7 @@ import ast
 class TestSaltUtilsData(unittest.TestCase):
 
     def test_recursive_diff_has_log_parameter(self):
-        file_path = '../salt/utils/data.py'
+        file_path = 'salt/utils/data.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -22,7 +22,7 @@ class TestSaltUtilsData(unittest.TestCase):
         self.assertTrue(log_param_found, f"'log' parameter not found in 'recursive_diff' function in {file_path}")
 
     def test_recursive_diff_calls_have_log_argument(self):
-        file_path = '../salt/utils/data.py'
+        file_path = 'salt/utils/data.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -45,7 +45,7 @@ class TestSaltUtilsData(unittest.TestCase):
             )
     
     def test_recursive_diff_does_not_have_log_parameter(self):
-        file_path = '../salt/utils/dictdiffer.py'
+        file_path = 'salt/utils/dictdiffer.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -62,7 +62,7 @@ class TestSaltUtilsData(unittest.TestCase):
         self.assertFalse(log_param_found, f"'log' parameter should not be present in 'recursive_diff' function in {file_path}")
 
     def test_recursive_diff_calls_do_not_have_log_argument(self):
-        file_path = '../salt/utils/listdiffer.py'
+        file_path = 'salt/utils/listdiffer.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -85,7 +85,7 @@ class TestSaltUtilsData(unittest.TestCase):
             )
             
     def test_recursive_diff_calls_have_log_true_argument(self):
-        file_path = '../salt/states/win_lgpo_reg.py'
+        file_path = 'salt/states/win_lgpo_reg.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -115,7 +115,7 @@ class TestSaltUtilsData(unittest.TestCase):
             )
             
     def test_dictdiffer_recursive_diff_calls_do_not_have_log_argument(self):
-        file_path = '../salt/states/file.py'
+        file_path = 'salt/states/file.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:

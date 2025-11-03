@@ -5,7 +5,7 @@ import ast
 class TestXmlUtilFunctions(unittest.TestCase):
 
     def test_xml_to_dict_in_xmlutil(self):
-        file_path = '../salt/utils/xmlutil.py'
+        file_path = 'salt/utils/xmlutil.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -16,7 +16,7 @@ class TestXmlUtilFunctions(unittest.TestCase):
         self.assertTrue(xml_to_dict_found, f"Function 'xml_to_dict' not found in {file_path}, but it should be present")
 
     def test_atts_to_dict_in_xmlutil(self):
-        file_path = '../salt/utils/xmlutil.py'
+        file_path = 'salt/utils/xmlutil.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -27,7 +27,7 @@ class TestXmlUtilFunctions(unittest.TestCase):
         self.assertTrue(atts_to_dict_found, f"Function 'atts_to_dict' not found in {file_path}, but it should be present")
 
     def test_string_to_value_in_xmlutil(self):
-        file_path = '../salt/utils/xmlutil.py'
+        file_path = 'salt/utils/xmlutil.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -38,7 +38,7 @@ class TestXmlUtilFunctions(unittest.TestCase):
         self.assertTrue(string_to_value_found, f"Function 'string_to_value' not found in {file_path}, but it should be present")
 
     def test_xml_to_dict_not_in_namecheap(self):
-        file_path = '../salt/utils/namecheap.py'
+        file_path = 'salt/utils/namecheap.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -49,7 +49,7 @@ class TestXmlUtilFunctions(unittest.TestCase):
         self.assertFalse(xml_to_dict_found, f"Function 'xml_to_dict' found in {file_path}, but it should not be present")
 
     def test_atts_to_dict_not_in_namecheap(self):
-        file_path = '../salt/utils/namecheap.py'
+        file_path = 'salt/utils/namecheap.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -60,7 +60,7 @@ class TestXmlUtilFunctions(unittest.TestCase):
         self.assertFalse(atts_to_dict_found, f"Function 'atts_to_dict' found in {file_path}, but it should not be present")
 
     def test_string_to_value_not_in_namecheap(self):
-        file_path = '../salt/utils/namecheap.py'
+        file_path = 'salt/utils/namecheap.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:

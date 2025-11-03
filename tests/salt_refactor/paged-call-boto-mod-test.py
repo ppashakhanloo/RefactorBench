@@ -5,7 +5,7 @@ import ast
 class TestPagedCallRedefinition(unittest.TestCase):
 
     def test_imported_paged_call_exists(self):
-        file_path = '../salt/utils/boto3mod.py'
+        file_path = 'salt/utils/boto3mod.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -21,7 +21,7 @@ class TestPagedCallRedefinition(unittest.TestCase):
         self.assertTrue(imported_paged_call_exists, f"Import for 'paged_call as imported_paged_call' from 'salt.utils.botomod' not found in {file_path}")
 
     def test_paged_call_redefinition_exists(self):
-        file_path = '../salt/utils/boto3mod.py'
+        file_path = 'salt/utils/boto3mod.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -35,7 +35,7 @@ class TestPagedCallRedefinition(unittest.TestCase):
         self.assertIsNotNone(paged_call_function, f"'paged_call' function not found in {file_path}")
 
     def test_paged_call_calls_imported_paged_call(self):
-        file_path = '../salt/utils/boto3mod.py'
+        file_path = 'salt/utils/boto3mod.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -57,7 +57,7 @@ class TestPagedCallRedefinition(unittest.TestCase):
         self.assertTrue(function_calls_imported_paged_call, f"'paged_call' function does not call 'imported_paged_call' in {file_path}")
 
     def test_original_paged_call_has_key_elements(self):
-        file_path = '../salt/utils/botomod.py'
+        file_path = 'salt/utils/botomod.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:

@@ -6,14 +6,14 @@ class TestCeleryAnnotationsUtils(unittest.TestCase):
 
     def test_annotations_utils_file_exists(self):
         # Path to the file where the resolve_all function should be defined
-        file_path = '../celery/app/annotations_utils.py'
+        file_path = 'celery/app/annotations_utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
     def test_resolve_all_function_exists(self):
         # Path to the file where the resolve_all function should be defined
-        file_path = '../celery/app/annotations_utils.py'
+        file_path = 'celery/app/annotations_utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -33,7 +33,7 @@ class TestCeleryAnnotationsUtils(unittest.TestCase):
 
     def test_resolve_all_in_all_declaration(self):
         # Path to the file where the __all__ declaration should be checked
-        file_path = '../celery/app/annotations_utils.py'
+        file_path = 'celery/app/annotations_utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -48,7 +48,7 @@ class TestCeleryAnnotationsUtils(unittest.TestCase):
 
     def test_import_first_match_and_first_match_any(self):
         # Path to the file where the import should be checked
-        file_path = '../celery/app/annotations_utils.py'
+        file_path = 'celery/app/annotations_utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -71,7 +71,7 @@ class TestCeleryAnnotationsUtils(unittest.TestCase):
 
     def test_annotations_all_declaration(self):
         # Path to the file where the __all__ declaration should be checked
-        file_path = '../celery/app/annotations.py'
+        file_path = 'celery/app/annotations.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -101,7 +101,7 @@ class TestCeleryAnnotationsUtils(unittest.TestCase):
 
     def test_mapannotation_class_exists(self):
         # Path to the file where the MapAnnotation class should be defined
-        file_path = '../celery/app/annotations.py'
+        file_path = 'celery/app/annotations.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -121,7 +121,7 @@ class TestCeleryAnnotationsUtils(unittest.TestCase):
 
     def test_prepare_function_exists(self):
         # Path to the file where the prepare function should be defined
-        file_path = '../celery/app/annotations.py'
+        file_path = 'celery/app/annotations.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -141,7 +141,7 @@ class TestCeleryAnnotationsUtils(unittest.TestCase):
 
     def test_first_match_and_first_match_any_assignments(self):
         # Path to the file where the assignments should be checked
-        file_path = '../celery/app/annotations.py'
+        file_path = 'celery/app/annotations.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")

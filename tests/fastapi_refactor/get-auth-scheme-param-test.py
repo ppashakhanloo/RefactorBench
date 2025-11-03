@@ -6,14 +6,14 @@ class TestFastAPISecurityUtils(unittest.TestCase):
 
     def test_utils_file_exists(self):
         # Path to the file where the functions should be defined
-        file_path = '../fastapi/security/utils.py'
+        file_path = 'fastapi/security/utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
     def test_get_auth_scheme_param_function_exists(self):
         # Path to the file where the get_auth_scheme_param function should be defined
-        file_path = '../fastapi/security/utils.py'
+        file_path = 'fastapi/security/utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -33,7 +33,7 @@ class TestFastAPISecurityUtils(unittest.TestCase):
 
     def test_get_authorization_scheme_param_function_does_not_exist(self):
         # Path to the file where the get_authorization_scheme_param function might have been defined
-        file_path = '../fastapi/security/utils.py'
+        file_path = 'fastapi/security/utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -53,14 +53,14 @@ class TestFastAPISecurityUtils(unittest.TestCase):
 
     def test_oauth2_file_exists(self):
         # Path to the file where the import should be checked
-        file_path = '../fastapi/security/oauth2.py'
+        file_path = 'fastapi/security/oauth2.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
     def test_import_get_auth_scheme_param(self):
         # Path to the file where the import should be checked
-        file_path = '../fastapi/security/oauth2.py'
+        file_path = 'fastapi/security/oauth2.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -83,14 +83,14 @@ class TestFastAPISecurityUtils(unittest.TestCase):
 
     def test_http_file_exists(self):
         # Path to the file where the import should be checked
-        file_path = '../fastapi/security/http.py'
+        file_path = 'fastapi/security/http.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
     def test_import_get_auth_scheme_param(self):
         # Path to the file where the import should be checked
-        file_path = '../fastapi/security/http.py'
+        file_path = 'fastapi/security/http.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")

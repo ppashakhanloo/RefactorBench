@@ -5,7 +5,7 @@ import ast
 class TestSaltUtilsSMB(unittest.TestCase):
 
     def test_ex_perm_denied_in_exitcodes(self):
-        file_path = '../salt/defaults/exitcodes.py'
+        file_path = 'salt/defaults/exitcodes.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -22,7 +22,7 @@ class TestSaltUtilsSMB(unittest.TestCase):
         self.assertTrue(ex_perm_denied_found, f"'EX_PERM_DENIED' not found in {file_path}")
 
     def test_ex_noperm_not_in_exitcodes(self):
-        file_path = '../salt/defaults/exitcodes.py'
+        file_path = 'salt/defaults/exitcodes.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -39,7 +39,7 @@ class TestSaltUtilsSMB(unittest.TestCase):
         self.assertFalse(ex_noperm_found, f"'EX_NOPERM' (misspelled) found in {file_path}")
 
     def test_ex_noperm_isnt_used_in_ssh(self):
-        file_path = '../salt/client/ssh/__init__.py'
+        file_path = 'salt/client/ssh/__init__.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -62,7 +62,7 @@ class TestSaltUtilsSMB(unittest.TestCase):
         self.assertFalse(ex_noperm_found, "salt.defaults.exitcodes.EX_NOPERM was found in salt/client/ssh/__init__.py, but it should not be used.")
 
     def test_ex_perm_denied_is_used_in_crypt(self):
-        file_path = '../salt/crypt.py'
+        file_path = 'salt/crypt.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -85,7 +85,7 @@ class TestSaltUtilsSMB(unittest.TestCase):
         self.assertTrue(ex_perm_denied_found, "salt.defaults.exitcodes.EX_PERM_DENIED was not found in salt/crypt.py")
 
     def test_ex_noperm_isnt_used_in_crypt(self):
-        file_path = '../salt/crypt.py'
+        file_path = 'salt/crypt.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:

@@ -6,7 +6,7 @@ class TestWorkerRequestImports(unittest.TestCase):
 
     def test_trace_imports_in_test_request(self):
         # Path to the file where the import should be checked
-        file_path = '../t/unit/worker/test_request.py'
+        file_path = 't/unit/worker/test_request.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -30,7 +30,7 @@ class TestWorkerRequestImports(unittest.TestCase):
 
     def test_mro_lookup_import_in_test_request(self):
         # Path to the file where the import should be checked
-        file_path = '../t/unit/worker/test_request.py'
+        file_path = 't/unit/worker/test_request.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -52,7 +52,7 @@ class TestWorkerRequestImports(unittest.TestCase):
     
     def test_mro_lookup_import_in_trace(self):
         # Path to the file where the import should be checked
-        file_path = '../celery/app/trace.py'
+        file_path = 'celery/app/trace.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")

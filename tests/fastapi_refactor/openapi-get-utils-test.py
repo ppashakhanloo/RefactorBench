@@ -6,21 +6,21 @@ class TestFastAPIGetUtils(unittest.TestCase):
 
     def test_get_utils_file_exists(self):
         # Path to the file where the get_utils.py should be defined
-        file_path = '../fastapi/openapi/get_utils.py'
+        file_path = 'fastapi/openapi/get_utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
     def test_utils_file_does_not_exist(self):
         # Path to the file where the old utils.py should no longer be present
-        file_path = '../fastapi/openapi/utils.py'
+        file_path = 'fastapi/openapi/utils.py'
 
         # Check if the file does not exist
         self.assertFalse(os.path.exists(file_path), f"{file_path} should not exist")
 
     def test_generate_operation_id_warning(self):
         # Path to the file where the generate_operation_id function is defined
-        file_path = '../fastapi/openapi/get_utils.py'
+        file_path = 'fastapi/openapi/get_utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -51,7 +51,7 @@ class TestFastAPIGetUtils(unittest.TestCase):
 
     
     def test_extending_openapi_md_de_docs(self):
-        file_path = '../docs/de/docs/how-to/extending-openapi.md'
+        file_path = 'docs/de/docs/how-to/extending-openapi.md'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -61,7 +61,7 @@ class TestFastAPIGetUtils(unittest.TestCase):
         self.assertIn('openapi.get_utils', content, f"'openapi.get_utils' not found in {file_path}")
 
     def test_extending_openapi_md_em_docs(self):
-        file_path = '../docs/em/docs/how-to/extending-openapi.md'
+        file_path = 'docs/em/docs/how-to/extending-openapi.md'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -71,7 +71,7 @@ class TestFastAPIGetUtils(unittest.TestCase):
         self.assertIn('openapi.get_utils', content, f"'openapi.get_utils' not found in {file_path}")
 
     def test_extending_openapi_md_en_docs(self):
-        file_path = '../docs/en/docs/how-to/extending-openapi.md'
+        file_path = 'docs/en/docs/how-to/extending-openapi.md'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -81,7 +81,7 @@ class TestFastAPIGetUtils(unittest.TestCase):
         self.assertIn('openapi.get_utils', content, f"'openapi.get_utils' not found in {file_path}")
 
     def test_tutorial001_py(self):
-        file_path = '../docs_src/extending_openapi/tutorial001.py'
+        file_path = 'docs_src/extending_openapi/tutorial001.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -91,7 +91,7 @@ class TestFastAPIGetUtils(unittest.TestCase):
         self.assertIn('openapi.get_utils', content, f"'openapi.get_utils' not found in {file_path}")
 
     def test_applications_py(self):
-        file_path = '../fastapi/applications.py'
+        file_path = 'fastapi/applications.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -101,7 +101,7 @@ class TestFastAPIGetUtils(unittest.TestCase):
         self.assertIn('openapi.get_utils', content, f"'openapi.get_utils' not found in {file_path}")
 
     def test_test_additional_responses_bad_py(self):
-        file_path = '../tests/test_additional_responses_bad.py'
+        file_path = 'tests/test_additional_responses_bad.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:

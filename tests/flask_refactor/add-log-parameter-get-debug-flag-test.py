@@ -6,7 +6,7 @@ class TestHelpersFunctions(unittest.TestCase):
 
     def setUp(self):
         # Path to the helpers.py file
-        self.file_path = '../src/flask/helpers.py'
+        self.file_path = 'src/flask/helpers.py'
         self.assertTrue(os.path.exists(self.file_path), f"{self.file_path} does not exist")
 
         # Parse the helpers.py file into an AST tree
@@ -62,7 +62,7 @@ class TestHelpersFunctions(unittest.TestCase):
         self.assertTrue(log_default_false, "'log' parameter in get_debug_flag function is not set to False by default")
 
     def test_get_debug_flag_in_app(self):
-        file_path = '../src/flask/app.py'
+        file_path = 'src/flask/app.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -82,7 +82,7 @@ class TestHelpersFunctions(unittest.TestCase):
         self.assertTrue(log_true_found, "get_debug_flag call with log=True not found in app.py")
 
     def test_get_debug_flag_in_cli(self):
-        file_path = '../src/flask/cli.py'
+        file_path = 'src/flask/cli.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -102,7 +102,7 @@ class TestHelpersFunctions(unittest.TestCase):
         self.assertTrue(log_true_found, "get_debug_flag call with log=True not found in cli.py")
 
     def test_get_debug_flag_in_sansio_app(self):
-        file_path = '../src/flask/sansio/app.py'
+        file_path = 'src/flask/sansio/app.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -122,7 +122,7 @@ class TestHelpersFunctions(unittest.TestCase):
         self.assertTrue(log_true_found, "get_debug_flag call with log=True not found in sansio/app.py")
 
     def test_get_debug_flag_calls_in_test_helpers(self):
-        file_path = '../tests/test_helpers.py'
+        file_path = 'tests/test_helpers.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:

@@ -6,14 +6,14 @@ class TestFastAPIUtils(unittest.TestCase):
 
     def test_utils_file_exists(self):
         # Path to the file where the functions should be defined
-        file_path = '../fastapi/utils.py'
+        file_path = 'fastapi/utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
     def test_generate_operation_id_for_path_has_log_parameter_with_default_false(self):
         # Path to the file where the generate_operation_id_for_path function should be defined
-        file_path = '../fastapi/utils.py'
+        file_path = 'fastapi/utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -48,14 +48,14 @@ class TestFastAPIUtils(unittest.TestCase):
 
     def test_openapi_utils_file_exists(self):
         # Path to the file where the import should be checked
-        file_path = '../fastapi/openapi/utils.py'
+        file_path = 'fastapi/openapi/utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
     def test_import_from_fastapi_utils(self):
         # Path to the file where the import should be checked
-        file_path = '../fastapi/openapi/utils.py'
+        file_path = 'fastapi/openapi/utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -77,7 +77,7 @@ class TestFastAPIUtils(unittest.TestCase):
 
     def test_generate_operation_id_for_path_calls_log_true(self):
         # Path to the file where the function calls should be checked
-        file_path = '../fastapi/openapi/utils.py'
+        file_path = 'fastapi/openapi/utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")

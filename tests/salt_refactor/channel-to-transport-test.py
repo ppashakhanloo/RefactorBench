@@ -5,15 +5,15 @@ import ast
 class TestSaltUtilsAndMaster(unittest.TestCase):
 
     def test_channel_py_does_not_exist(self):
-        file_path = '../salt/utils/channel.py'
+        file_path = 'salt/utils/channel.py'
         self.assertFalse(os.path.exists(file_path), f"{file_path} should not exist")
 
     def test_transport_py_exists(self):
-        file_path = '../salt/utils/transport.py'
+        file_path = 'salt/utils/transport.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
     def test_transport_has_iter_transport_opts(self):
-        file_path = '../salt/utils/transport.py'
+        file_path = 'salt/utils/transport.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -27,7 +27,7 @@ class TestSaltUtilsAndMaster(unittest.TestCase):
         self.assertIsNotNone(iter_transport_opts_function, f"'iter_transport_opts' function not found in {file_path}")
 
     def test_master_imports_iter_transport_opts(self):
-        file_path = '../salt/master.py'
+        file_path = 'salt/master.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -43,7 +43,7 @@ class TestSaltUtilsAndMaster(unittest.TestCase):
         self.assertTrue(import_statement_exists, f"'iter_transport_opts' is not imported from 'salt.utils.transport' in {file_path}")
 
     def test_imports_salt_utils_transport(self):
-        file_path = '../salt/channel/server.py'
+        file_path = 'salt/channel/server.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -59,7 +59,7 @@ class TestSaltUtilsAndMaster(unittest.TestCase):
 
 
     def test_uses_iter_transport_opts(self):
-        file_path = '../salt/channel/server.py'
+        file_path = 'salt/channel/server.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:

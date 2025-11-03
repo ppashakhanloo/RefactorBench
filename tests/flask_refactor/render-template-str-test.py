@@ -5,7 +5,7 @@ import ast
 class TestHelpersFunctions(unittest.TestCase):
 
     def test_render_template_string_not_in_templating(self):
-        file_path = '../src/flask/templating.py'
+        file_path = 'src/flask/templating.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -20,7 +20,7 @@ class TestHelpersFunctions(unittest.TestCase):
         self.assertFalse(function_found, "'render_template_string' function found in templating.py")
 
     def test_render_template_str_exists_in_templating(self):
-        file_path = '../src/flask/templating.py'
+        file_path = 'src/flask/templating.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -35,7 +35,7 @@ class TestHelpersFunctions(unittest.TestCase):
         self.assertTrue(function_found, "'render_template_str' function not found in templating.py")
 
     def test_render_template_str_import_in_init(self):
-        file_path = '../src/flask/__init__.py'
+        file_path = 'src/flask/__init__.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -53,7 +53,7 @@ class TestHelpersFunctions(unittest.TestCase):
 
     def test_render_template_str_call_in_test_templating(self):
         # Path to the test_templating.py file
-        file_path = '../tests/test_templating.py'
+        file_path = 'tests/test_templating.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         # Check if render_template_string is correctly aliased and called as render_template_str
@@ -75,7 +75,7 @@ class TestHelpersFunctions(unittest.TestCase):
         self.assertFalse(incorrect_call_found, "Incorrect call to 'flask.render_template_str' found in test_templating.py")
 
     def test_render_template_usage_in_test_appctx(self):
-        file_path = '../tests/test_appctx.py'
+        file_path = 'tests/test_appctx.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -96,7 +96,7 @@ class TestHelpersFunctions(unittest.TestCase):
 
 
     def test_render_template_usage_in_test_blueprints(self):
-        file_path = '../tests/test_blueprints.py'
+        file_path = 'tests/test_blueprints.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -117,7 +117,7 @@ class TestHelpersFunctions(unittest.TestCase):
 
 
     def test_render_template_usage_in_test_json(self):
-        file_path = '../tests/test_json.py'
+        file_path = 'tests/test_json.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -138,7 +138,7 @@ class TestHelpersFunctions(unittest.TestCase):
 
 
     def test_render_template_usage_in_test_templating(self):
-        file_path = '../tests/test_templating.py'
+        file_path = 'tests/test_templating.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -158,7 +158,7 @@ class TestHelpersFunctions(unittest.TestCase):
         self.assertFalse(incorrect_call_found, "Incorrect call to 'flask.render_template_string' found in test_templating.py")
 
     def test_render_template_str_in_api_rst(self):
-        file_path = '../docs/api.rst'
+        file_path = 'docs/api.rst'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -168,7 +168,7 @@ class TestHelpersFunctions(unittest.TestCase):
         self.assertNotIn('render_template_string', content, "Unexpected 'render_template_string' found in api.rst")
 
     def test_flask_templating_render_template_str_in_templating_rst(self):
-        file_path = '../docs/templating.rst'
+        file_path = 'docs/templating.rst'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:

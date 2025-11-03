@@ -6,7 +6,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_truncate_text_function_exists(self):
         # Path to the file where the truncate_text function should be defined
-        file_path = '../celery/utils/text.py'
+        file_path = 'celery/utils/text.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -26,7 +26,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_truncate_text_in_all(self):
         # Path to the file where the __all__ declaration should be defined
-        file_path = '../celery/utils/text.py'
+        file_path = 'celery/utils/text.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -54,7 +54,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_import_truncate_text_in_saferepr(self):
         # Path to the file where the import should be checked
-        file_path = '../celery/utils/saferepr.py'
+        file_path = 'celery/utils/saferepr.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -75,7 +75,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_import_truncate_text_in_concurrency_base(self):
         # Path to the file where the import should be checked
-        file_path = '../celery/concurrency/base.py'
+        file_path = 'celery/concurrency/base.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -97,7 +97,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_import_remove_repeating_from_task_and_truncate_text_in_canvas(self):
         # Path to the file where the import should be checked
-        file_path = '../celery/canvas.py'
+        file_path = 'celery/canvas.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -124,7 +124,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_import_truncate_text_in_testing_manager(self):
         # Path to the file where the import should be checked
-        file_path = '../celery/contrib/testing/manager.py'
+        file_path = 'celery/contrib/testing/manager.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -145,7 +145,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_import_abbr_abbrtask_ensure_newlines_indent_pretty_truncate_text_in_test_text(self):
         # Path to the file where the import should be checked
-        file_path = '../t/unit/utils/test_text.py'
+        file_path = 't/unit/utils/test_text.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -176,7 +176,7 @@ class TestCeleryUtils(unittest.TestCase):
     
     def test_import_truncate_text_in_consumer(self):
         # Path to the file where the import should be checked
-        file_path = '../celery/worker/consumer/consumer.py'
+        file_path = 'celery/worker/consumer/consumer.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -197,7 +197,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_saferepr_function_truncate_handling(self):
         # Path to the file where the _saferepr function should be defined
-        file_path = '../celery/utils/saferepr.py'
+        file_path = 'celery/utils/saferepr.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")

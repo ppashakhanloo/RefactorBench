@@ -6,14 +6,14 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_utils_file_exists(self):
         # Path to the file where the expand_router_string function should be defined
-        file_path = '../celery/app/utils.py'
+        file_path = 'celery/app/utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
     def test_expand_router_string_function_exists(self):
         # Path to the file where the expand_router_string function should be defined
-        file_path = '../celery/app/utils.py'
+        file_path = 'celery/app/utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -33,7 +33,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_expand_router_string_in_all_declaration(self):
         # Path to the file where the __all__ declaration should be checked
-        file_path = '../celery/app/utils.py'
+        file_path = 'celery/app/utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -66,7 +66,7 @@ class TestCeleryUtils(unittest.TestCase):
 
     def test_import_expand_router_string_in_routes(self):
         # Path to the file where the import should be checked
-        file_path = '../celery/app/routes.py'
+        file_path = 'celery/app/routes.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")

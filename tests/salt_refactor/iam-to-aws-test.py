@@ -5,11 +5,11 @@ import ast
 class TestSaltUtilsAWS(unittest.TestCase):
 
     def test_aws_py_exists(self):
-        file_path = '../salt/utils/aws.py'
+        file_path = 'salt/utils/aws.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
     def test_aws_py_imports_pprint(self):
-        file_path = '../salt/utils/aws.py'
+        file_path = 'salt/utils/aws.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -26,7 +26,7 @@ class TestSaltUtilsAWS(unittest.TestCase):
         self.assertTrue(pprint_imported, f"'pprint' is not imported in {file_path}")
 
     def test_convert_key_to_str_function_exists(self):
-        file_path = '../salt/utils/aws.py'
+        file_path = 'salt/utils/aws.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -41,7 +41,7 @@ class TestSaltUtilsAWS(unittest.TestCase):
         self.assertIsNotNone(convert_key_to_str_function, f"'_convert_key_to_str' function not found in {file_path}")
 
     def test_retry_get_url_function_exists(self):
-        file_path = '../salt/utils/aws.py'
+        file_path = 'salt/utils/aws.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -56,7 +56,7 @@ class TestSaltUtilsAWS(unittest.TestCase):
         self.assertIsNotNone(retry_get_url_function, f"'_retry_get_url' function not found in {file_path}")
 
     def test_utils_iam_py_does_not_exist(self):
-        file_path = '../utils/iam.py'
+        file_path = 'utils/iam.py'
         self.assertFalse(os.path.exists(file_path), f"{file_path} should not exist")
 
 if __name__ == '__main__':

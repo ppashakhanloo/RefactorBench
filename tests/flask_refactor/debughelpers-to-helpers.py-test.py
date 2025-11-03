@@ -6,7 +6,7 @@ class TestHelpersFunctions(unittest.TestCase):
 
     def test_attach_enctype_error_multidict_exists(self):
         # Path to the file where the function should be located
-        file_path = '../src/flask/helpers.py'
+        file_path = 'src/flask/helpers.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -25,7 +25,7 @@ class TestHelpersFunctions(unittest.TestCase):
 
     def test_dump_loader_info_exists(self):
         # Path to the file where the function should be located
-        file_path = '../src/flask/helpers.py'
+        file_path = 'src/flask/helpers.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -44,7 +44,7 @@ class TestHelpersFunctions(unittest.TestCase):
 
     def test_explain_template_loading_attempts_exists(self):
         # Path to the file where the function should be located
-        file_path = '../src/flask/helpers.py'
+        file_path = 'src/flask/helpers.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -63,7 +63,7 @@ class TestHelpersFunctions(unittest.TestCase):
 
     def test_functions_not_in_debughelpers(self):
         # Path to the debughelpers.py file
-        file_path = '../src/flask/debughelpers.py'
+        file_path = 'src/flask/debughelpers.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -88,7 +88,7 @@ class TestHelpersFunctions(unittest.TestCase):
 
     def test_helpers_py_imports(self):
         # Path to the helpers.py file
-        file_path = '../src/flask/helpers.py'
+        file_path = 'src/flask/helpers.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")

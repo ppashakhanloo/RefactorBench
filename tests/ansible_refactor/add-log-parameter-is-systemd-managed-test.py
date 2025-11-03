@@ -6,7 +6,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_is_systemd_managed_has_log_parameter(self):
         # Path to the file where the is_systemd_managed function should be defined
-        file_path = '../lib/ansible/module_utils/service.py'
+        file_path = 'lib/ansible/module_utils/service.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -30,7 +30,7 @@ class TestAnsibleImports(unittest.TestCase):
         
     def test_is_systemd_managed_called_with_log_true_in_service(self):
         # Path to the file where the service.py module should be checked
-        file_path = '../lib/ansible/modules/service.py'
+        file_path = 'lib/ansible/modules/service.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -51,7 +51,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_is_systemd_managed_called_with_log_true_in_service_facts(self):
         # Path to the file where the service_facts.py module should be checked
-        file_path = '../lib/ansible/modules/service_facts.py'
+        file_path = 'lib/ansible/modules/service_facts.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -72,7 +72,7 @@ class TestAnsibleImports(unittest.TestCase):
         
     def test_is_systemd_managed_unchanged_in_systemd_facts(self):
         # Path to the file where ServiceMgrFactCollector.is_systemd_managed(module) should be checked
-        file_path = '../lib/ansible/module_utils/facts/system/systemd.py'
+        file_path = 'lib/ansible/module_utils/facts/system/systemd.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -99,7 +99,7 @@ class TestAnsibleImports(unittest.TestCase):
 
     def test_is_systemd_managed_unchanged_in_hostname(self):
         # Path to the file where ServiceMgrFactCollector.is_systemd_managed(module) should be checked
-        file_path = '../lib/ansible/modules/hostname.py'
+        file_path = 'lib/ansible/modules/hostname.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")

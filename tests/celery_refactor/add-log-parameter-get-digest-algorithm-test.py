@@ -6,7 +6,7 @@ class TestCelerySecurityUtils(unittest.TestCase):
 
     def test_get_digest_algorithm_function_exists(self):
         # Path to the file where the get_digest_algorithm function should be defined
-        file_path = '../celery/security/utils.py'
+        file_path = 'celery/security/utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -26,7 +26,7 @@ class TestCelerySecurityUtils(unittest.TestCase):
 
     def test_get_digest_algorithm_has_log_parameter(self):
         # Path to the file where the get_digest_algorithm function should be defined
-        file_path = '../celery/security/utils.py'
+        file_path = 'celery/security/utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -52,7 +52,7 @@ class TestCelerySecurityUtils(unittest.TestCase):
 
     def test_log_parameter_is_false(self):
         # Path to the file where the get_digest_algorithm function should be defined
-        file_path = '../celery/security/utils.py'
+        file_path = 'celery/security/utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -79,7 +79,7 @@ class TestCelerySecurityUtils(unittest.TestCase):
 
     def test_get_digest_algorithm_calls_have_log_true(self):
         # Path to the file where the get_digest_algorithm calls should be checked
-        file_path = '../celery/security/serialization.py'
+        file_path = 'celery/security/serialization.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -105,7 +105,7 @@ class TestCelerySecurityUtils(unittest.TestCase):
 
     def test_get_digest_algorithm_calls_log_false_or_not_passed(self):
         # Path to the file where the get_digest_algorithm calls should be checked
-        file_path = '../t/unit/security/test_key.py'
+        file_path = 't/unit/security/test_key.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")

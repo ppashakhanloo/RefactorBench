@@ -6,14 +6,14 @@ class TestCeleryUtilsNodenames(unittest.TestCase):
 
     def test_nodenames_file_exists(self):
         # Path to the file where the format_host function should be defined
-        file_path = '../celery/utils/nodenames.py'
+        file_path = 'celery/utils/nodenames.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
     def test_format_host_function_exists(self):
         # Path to the file where the format_host function should be defined
-        file_path = '../celery/utils/nodenames.py'
+        file_path = 'celery/utils/nodenames.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -33,7 +33,7 @@ class TestCeleryUtilsNodenames(unittest.TestCase):
 
     def test_format_host_in_all_declaration(self):
         # Path to the file where the __all__ declaration should be checked
-        file_path = '../celery/utils/nodenames.py'
+        file_path = 'celery/utils/nodenames.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -61,7 +61,7 @@ class TestCeleryUtilsNodenames(unittest.TestCase):
     
     def test_worker_imports_nodenames_functions(self):
         # Path to the file where the import should be checked
-        file_path = '../celery/bin/worker.py'
+        file_path = 'celery/bin/worker.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -84,7 +84,7 @@ class TestCeleryUtilsNodenames(unittest.TestCase):
 
     def test_format_host_not_called_in_worker(self):
         # Path to the file where the function call should be checked
-        file_path = '../celery/bin/worker.py'
+        file_path = 'celery/bin/worker.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -108,7 +108,7 @@ class TestCeleryUtilsNodenames(unittest.TestCase):
         
     def test_multi_imports_nodenames_functions(self):
         # Path to the file where the import should be checked
-        file_path = '../celery/apps/multi.py'
+        file_path = 'celery/apps/multi.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -131,7 +131,7 @@ class TestCeleryUtilsNodenames(unittest.TestCase):
 
     def test_format_host_not_called_in_multi(self):
         # Path to the file where the function call should be checked
-        file_path = '../celery/apps/multi.py'
+        file_path = 'celery/apps/multi.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")

@@ -6,7 +6,7 @@ class TestSaltUtilsModules(unittest.TestCase):
 
     # Check that 'mksls' does not exist in preseed.py
     def test_preseed_py_does_not_have_mksls(self):
-        file_path = '../salt/utils/preseed.py'
+        file_path = 'salt/utils/preseed.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -21,7 +21,7 @@ class TestSaltUtilsModules(unittest.TestCase):
 
     # Check that 'mksls' does not exist in kickstart.py
     def test_kickstart_py_does_not_have_mksls(self):
-        file_path = '../salt/utils/kickstart.py'
+        file_path = 'salt/utils/kickstart.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -36,7 +36,7 @@ class TestSaltUtilsModules(unittest.TestCase):
 
     # Check that 'mksls' does not exist in yast.py
     def test_yast_py_does_not_have_mksls(self):
-        file_path = '../salt/utils/yast.py'
+        file_path = 'salt/utils/yast.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -51,7 +51,7 @@ class TestSaltUtilsModules(unittest.TestCase):
 
     # Check that 'preseed_to_sls' exists in preseed.py
     def test_preseed_py_has_preseed_to_sls(self):
-        file_path = '../salt/utils/preseed.py'
+        file_path = 'salt/utils/preseed.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -66,7 +66,7 @@ class TestSaltUtilsModules(unittest.TestCase):
 
     # Check that 'kickstart_to_sls' exists in kickstart.py
     def test_kickstart_py_has_kickstart_to_sls(self):
-        file_path = '../salt/utils/kickstart.py'
+        file_path = 'salt/utils/kickstart.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:
@@ -81,7 +81,7 @@ class TestSaltUtilsModules(unittest.TestCase):
 
     # Check that 'autoyast_to_sls' exists in yast.py
     def test_yast_py_has_autoyast_to_sls(self):
-        file_path = '../salt/utils/yast.py'
+        file_path = 'salt/utils/yast.py'
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
         with open(file_path, 'r') as file:

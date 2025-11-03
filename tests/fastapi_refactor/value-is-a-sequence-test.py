@@ -6,14 +6,14 @@ class TestFastAPICompatUtils(unittest.TestCase):
 
     def test_compat_file_exists(self):
         # Path to the file where the functions should be defined
-        file_path = '../fastapi/_compat.py'
+        file_path = 'fastapi/_compat.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
 
     def test_value_is_a_sequence_function_exists(self):
         # Path to the file where the value_is_a_sequence function should be defined
-        file_path = '../fastapi/_compat.py'
+        file_path = 'fastapi/_compat.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -33,7 +33,7 @@ class TestFastAPICompatUtils(unittest.TestCase):
 
     def test_value_is_sequence_function_does_not_exist(self):
         # Path to the file where the value_is_sequence function might have been defined
-        file_path = '../fastapi/_compat.py'
+        file_path = 'fastapi/_compat.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -53,7 +53,7 @@ class TestFastAPICompatUtils(unittest.TestCase):
 
     def test_import_value_is_a_sequence_in_utils(self):
         # Path to the file where the import should be checked
-        file_path = '../fastapi/dependencies/utils.py'
+        file_path = 'fastapi/dependencies/utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
@@ -76,7 +76,7 @@ class TestFastAPICompatUtils(unittest.TestCase):
 
     def test_value_is_sequence_function_does_not_exist_in_utils(self):
         # Path to the file where the value_is_sequence function might have been defined
-        file_path = '../fastapi/dependencies/utils.py'
+        file_path = 'fastapi/dependencies/utils.py'
 
         # Check if the file exists
         self.assertTrue(os.path.exists(file_path), f"{file_path} does not exist")
