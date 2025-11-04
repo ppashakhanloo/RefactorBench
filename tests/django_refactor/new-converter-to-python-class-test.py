@@ -48,8 +48,8 @@ class TestBackendsUtils(unittest.TestCase):
 
     def test_converter_to_python_imports(self):
         files_to_test = [
-            "../django/db/backends/sqlite3/_functions.py",
-            "../django/db/backends/mysql/base.py",
+            "django/db/backends/sqlite3/_functions.py",
+            "django/db/backends/mysql/base.py",
         ]
 
         for file_path in files_to_test:
